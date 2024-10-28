@@ -11,15 +11,17 @@ const props = defineProps({
 
 
 const dynamicClasses = computed(() => ({
-  [`bg-[${props.bg}]`]: props.isBg,
-  [`text-[${props.textColor}]`]: props.isBg,
+  [`${props.bg}`]: props.isBg,
+  [`${props.textColor}`]: props.isBg,
+  [`text-[#ffffff] `]: !props.isBg
 }));
+console.log(dynamicClasses);
 </script>
 
 <template>
-  <Button
-    :class="[dynamicClasses, 'border-2 border-[#ffffff] py-2 px-4 text-[#ffffff] rounded-lg font-medium hover:opacity-85']"
+  <button
+    :class="[dynamicClasses, 'border-2 border-[#ffffff] py-2 px-4 rounded-lg font-medium hover:opacity-85']"
   >
     {{ props.text }}
-  </Button>
+  </button>
 </template>
