@@ -56,7 +56,7 @@ watchEffect(() => {
                     <img :src="BlockChainLogo" alt="logo" class="w-8">
                     <h1 class="flex font-bold text-2xl text-[#ffffff]">Blockchain <span
                             class="text-[#c1c8d9]">.com</span></h1>
-                    
+
                     <div class=" flex items-center gap-6 xl:ml-8 xl:gap-9 ml-8  font-[Inter Tight] font-semibold text-lg"
                         v-if="largeDevice">
                         <router-link to="#"
@@ -106,7 +106,7 @@ watchEffect(() => {
 
 
 
-                        
+
                         <div
                             class="w-12 h-12 aspect-square hover:bg-white/15 rounded-full bg-[#293448] flex justify-center items-center">
                             <img :src="SearchIcon" alt="s-icon" class="size-8">
