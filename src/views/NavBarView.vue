@@ -83,7 +83,7 @@ watchEffect(() => {
                             </div>
 
                             <div
-                                class="absolute  delay-200 invisible group-hover:visible opacity-0 group-hover:opacity-100 top-12  -right-64 rounded-xl p-6  shadow-xl bg-[#ffffff]  max-w-[38rem] flex gap-16">
+                                class="absolute  delay-200 z-10 invisible group-hover:visible opacity-0 group-hover:opacity-100 top-12  -right-64 rounded-xl p-6  shadow-xl bg-[#ffffff]  max-w-[38rem] flex gap-16">
                                 <div v-for="(items, keyOfItem) in data" :key="keyOfItem" class="flex flex-col gap-4">
                                     <h1 class="text-zinc-950 font-semibold font-[Inter Tight]">{{ keyOfItem }}</h1>
                                     <div class="flex flex-col gap-4 text-zinc-950/80 font-normal text-nowrap ">

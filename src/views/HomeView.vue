@@ -8,7 +8,8 @@ import StellarIcon from '../assets/icons/stellar-coin.png'
 import SolanaIcon from '../assets/icons/solana.png'
 import RightArrowPng from '../assets/icons/right-arrow.png'
 
-import { onMounted, onUnmounted, reactive, ref, watchEffect } from 'vue';
+
+import { reactive } from 'vue';
 
 interface CardDataProps {
   img: string,
@@ -50,34 +51,7 @@ CardData = [{
 }
 ]
 
-// const width = ref(0)
 
-// onMounted(() => {
-//     const updateWidth = () => {
-//         width.value = window.screen.width
-//     }
-
-//     window.addEventListener('resize', updateWidth)
-
-//     onUnmounted(() => {
-//         window.removeEventListener('resize', updateWidth)
-//     })
-// })
-
-// watchEffect(() => {
-//     if (width.value > 640) mediumDevice.value = true
-//     if (width.value < 640) mediumDevice.value = false
-//     if (width.value > 1024) {
-//         largeDevice.value = true
-//         // mediumDevice.value = false
-//     }
-//     if (width.value < 1024) {
-//         largeDevice.value = false
-//         // mediumDevice.value = true
-//     }
-
-
-// })
 
 
 </script>
@@ -85,9 +59,11 @@ CardData = [{
 <template>
 
   <NavBarView />
-  <main class="bg-heroBackground  relative  bg-cover  bg-left-top md:bg-right-bottom  text-[#ffffff]">
+  <!-- Hero Section  -->
+  <main
+    class="bg-[url('../assets/icons/home-hero-gradient.svg')]  relative  bg-cover  bg-left-top md:bg-right-bottom  text-[#ffffff]">
     <div
-      class="xl:max-w-6xl flex flex-col gap-8 xl:mx-auto xl:h-[59vh] py-[7rem] px-4 xl:px-[5rem] xl:py-44 font-[Inter Tight] ">
+      class="xl:max-w-6xl flex flex-col gap-8 xl:mx-auto xl:h-[47vh] py-[7rem] px-4 xl:px-[5rem] xl:py-16 font-[Inter Tight] ">
       <h1 class="md:text-5xl text-2xl font-bold leading-tight">Be early to the future of finance</h1>
       <h3 class="md:text-2xl text-lg font-semibold text-balance  xl:font-medium leading-tight">Buy Bitcoin, Ethereum,
         and other leading cryptocurrencies on a
@@ -103,9 +79,9 @@ CardData = [{
     </div>
 
     <div
-      class="absolute  md:-bottom-96 lg:-bottom-48 -bottom-48 flex lg:w-[65rem] w-[100vw]  overflow-x-scroll md:flex-wrap md:overflow-x-hidden scroll-smooth px-8 xl:left-32 2xl:left-96 flex-col items-start gap-5">
+      class="absolute  md:-bottom-96 lg:-bottom-36 -bottom-48 flex lg:w-[65rem] w-[100vw]  overflow-x-scroll md:flex-wrap md:overflow-x-hidden scroll-smooth px-8 xl:left-[12rem] no-scrollbar 2xl:left-[27rem] flex-col items-start gap-5 lg:gap-1">
       <div class="flex gap-8 md:flex-wrap lg:flex-nowrap">
-        <Card v-for="(item, idx) in CardData" :key="idx" :item="item" />
+        <Card v-for="(item, idx) in CardData" :key="idx" :item="item" class="cursor-pointer" />
       </div>
 
       <<router-link to='#'
@@ -117,5 +93,12 @@ CardData = [{
     </div>
 
   </main>
+
+
+  <!-- Features section  -->
+  <section>
+
+  </section>
+
 
 </template>
