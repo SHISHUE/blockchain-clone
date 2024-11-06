@@ -50,7 +50,7 @@ watchEffect(() => {
 </script>
 <template>
     <div
-        :class="[bgColor, textColor, 'xl:mt-[5rem]','xl:first:mt-[10rem]','sm:first:mt-[25rem]', 'first:mt-[13rem]', 'mt-[3rem]', 'sm:max-w-7xl', 'w-[96%]', 'mx-auto', 'h-[65vh]', 'sm:h-[90vh]', 'rounded-3xl']">
+        :class="[bgColor, textColor, 'xl:mt-[5rem]', 'sm:first:mt-[25rem]', 'first:mt-[13rem]', 'mt-[3rem]', 'sm:max-w-7xl', 'w-[96%]', 'mx-auto', 'h-[65vh]', 'sm:h-[90vh]', 'rounded-3xl']">
         <div v-if="isRight" class="flex sm:flex-row flex-col gap-5 h-full relative">
             <!-- left  -->
             <div class="sm:w-1/2 relative flex flex-col sm:justify-center  h-full px-3 py-4 xl:py-20 xl:pl-28">
