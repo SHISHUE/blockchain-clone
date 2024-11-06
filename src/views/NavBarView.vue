@@ -49,7 +49,7 @@ watchEffect(() => {
 
 </script>
 <template>
-    <div class="bg-[#121d33] border-b-[1px] border-[#c1c8d963]">
+    <div class="bg-[#121d33] border-b-[1px] fixed z-50 w-full border-[#c1c8d963]">
         <nav class="py-4 px-3  xl:max-w-7xl xl:mx-auto  bg-[#121d33] text-[#c1c8d9]">
             <div class="flex justify-between items-center">
                 <div class="flex items-center justify-between gap-1  font-[Inter Tight] ">
